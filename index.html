@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter | @adityaflexes</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <div class="enter-amount">
+            <label for="amount">Enter Amount</label>
+            <input id="amount" value="1" placeholder="e.g. 10$" type="number">
+        </div>
+        <div class="exchange-preference">
+            <div class="from">
+                <label for="from">From</label>
+                <div class="dropdown">
+                    <img class="flag" loading="lazy" src="https://flagsapi.com/US/flat/64.png" alt="flag.png">
+                    <select name="from" id="from"></select>
+                </div>
+            </div>
+            <div class="exchange-icon">
+                <i class="ri-arrow-left-right-line"></i>
+            </div>
+            <div class="to">
+                <label for="to">To</label>
+                <div class="dropdown">
+                    <img class="flag" loading="lazy" src="https://flagsapi.com/IN/flat/64.png" alt="flag.png">
+                    <select name="to" id="to"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-exchange-data">
+            <p id="current-rate"></p>
+            <p id="calc-value"></p>
+        </div>
+        <div class="btn">
+            <button type="submit">Get Exchange Rate</button>
+        </div>
+    </div>
+
+    <script src="countryCode.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

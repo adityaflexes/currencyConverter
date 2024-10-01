@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(218, 205, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background-color: #ddd;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 18px;
+}
+
+.enter-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.enter-amount input {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding-inline: 1rem;
+    font-weight: 600;
+}
+
+.exchange-preference {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exchange-preference .dropdown {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.dropdown select {
+    width: 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.dropdown img {
+    height: 2rem;
+}
+
+.exchange-icon {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.show-exchange-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0.5rem;
+    font-weight: 500;
+}
+
+#current-rate {
+    color: #444;
+}
+
+#calc-value {
+    border: solid 2px #eee;
+    background: thistle;
+    border-radius: 6px;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(93, 239, 93);
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: rgb(148, 255, 148);
+}
