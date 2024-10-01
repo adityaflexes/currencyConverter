@@ -63,6 +63,7 @@ body {
 }
 
 .dropdown select {
+    background: white;
     width: 5rem;
     font-size: 1rem;
     font-weight: 700;
@@ -110,4 +111,10 @@ body {
 
 .btn button:hover {
     background-color: rgb(148, 255, 148);
+}
+
+@media screen and (max-width: 454px) {
+    .container {
+        transform: scale(0.95) translateY(-10px);
+    }
 }
